@@ -27,7 +27,7 @@ body{
     top: 5px;
     border-radius: 10px;
     border: none;
-    background-color: #d1b126b9;
+    background-color: #ad8d00b9;
    
 }
 ul{
@@ -45,13 +45,13 @@ li{
 }
 span{
     position: absolute;
+    top: 5px;
     left: 12px;
     font-size: 35px;
 
 }
 .baner{
     margin-top: 10px;
-    border-radius: 10px;
     height: 500px;
     position: relative;
 }
@@ -61,43 +61,27 @@ img {
     object-fit:cover;
     border-radius: 10px;
 }
-.childa{
+.child{
     width: 300px;
     height: 300px;
     position: absolute;
     top: 50px;
-    right:230px;
-    z-index: 5;
-    
+    right: 230px;
+
 }
-.childb{
-    height:300px;
-    width: 300px;
-    position: absolute;
-    top: 50px;
-    right:230px;
-    border-radius: 10px;
+.a{
+    z-index: 5;
+}
+.b{
     transform: translate(10%,10%);
     z-index: 4;
 }
-.childc{
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    top: 50px;
-    right:230px;
-    border-radius: 10px;
+.c{
     transform: translate(20%,20%);
     z-index: 3;
     
 }
-.childd{
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    top: 50px;
-    right:230px;
-    border-radius: 10px;
+.d{
     transform: translate(30%,30%);
     z-index: 2;
 }
@@ -113,7 +97,7 @@ img {
    
 }
 .text button{
-    background-image: linear-gradient(to right, #eacda3 0%, #d6ae7b  51%, #eacda3  100%);
+    background: radial-gradient(circle, rgba(214,174,123,1) 0%, rgba(234,205,163,1) 23%);
     font-weight: 600;
     height: 60px;
     width: 180px;
@@ -125,7 +109,6 @@ img {
 
 }
 p{
-    
     color: #9e6920;
     font-weight: 1000;
     font-style: italic;
