@@ -1,6 +1,11 @@
 body{
     margin: 0%;
 }
+h1{
+    color: bisque;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 .nav{
     width: 85%;
     margin: auto;
@@ -11,17 +16,81 @@ body{
 .nav ul li{
     display: inline;
     margin: 0 20px;
+    position: relative;
 }
 .nav ul li a{
     text-decoration: none;
-    font-size: large;
+    font-size: 22px;
     text-transform: uppercase;
+    color: aliceblue;
 }
 .hero{
-    background-image: url(spacejoy-9M66C_w_ToM-unsplash.jpg);
+    background-image: url(berlian-khatulistiwa-RdLw6AuTH6Y-unsplash.jpg);
     width: auto;
-    height: 760px;
+    height: 761px;
     background-size: cover ;
     background-position: center;
+}
+.nav ul li::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(255, 213, 0);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition:0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
+.text{
+    width: auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    margin: 0;
+    background: -webkit-linear-gradient(45deg, #ff9d76, #ffaa2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+}
+button{
+    border: 1px solid rgb(226, 163, 25);
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: aliceblue;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+p{
+    color: aliceblue;
+}
+button::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: rgb(255, 213, 0);
+    position: absolute;
+    border-radius: 50px;
+    bottom: 0px;
+    left: 0px;
+    transition:0.5s;
+    z-index:-1;
     
+}
+button:hover::before{
+    width: 100%;
+}
+button:hover{
+    color: black;
 }
