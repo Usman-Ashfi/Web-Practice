@@ -1,164 +1,27 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-
-*{ 
-    font-family: 'Gruppo', cursive;
-
-}
 body{
-    background-color: rgb(45, 43, 43);
-    
+    margin: 0%;
 }
-
-.nav1 {
-    background-color: rgba(163, 142, 96, 0.703);
-    height: 50px;
-    width: 100%;
-    border-radius: 5px;
-    position: relative;
-    padding-top: 5px;
-    padding-left: 5px;
-
+.nav{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.btn{
-    width: 65px;
-    background-color: #ad8d00b9;
-    height: 35px;
-    position: absolute;
-    right: 15px;
-    top: 5px;
-    border-radius: 10px;
-    border: none;
-   
+.nav ul li{
+    display: inline;
+    margin: 0 20px;
 }
-ul{
-    list-style: none;
-    padding:0;
-    margin: 0;
-    text-align: center;
-    
-}
-li{
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 24px;
-}
-span{
-    font-size: 35px;
-}
-.baner{
-    margin-top: 10px;
-    height: 500px;
-    position: relative;
-}
-img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius: 10px;
-}
-.child{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 50px;
-    right: 230px;
-
-}
-.a{
-    z-index: 5;
-}
-.b{
-    transform: translate(10%,10%);
-    z-index: 4;
-}
-.c{
-    transform: translate(20%,20%);
-    z-index: 3;
-    
-}
-.d{
-    transform: translate(30%,30%);
-    z-index: 2;
-}
-.text{
-    letter-spacing: 10px;
-    font-size: 50px;
-    padding: 10px;
-    height: 300px;
-    width: 400px;
-    position: absolute;
-    top: 100px;
-    left: 250px;
-   
-}
-.text button{
-    background: radial-gradient(circle, rgba(214,174,123,1) 0%, rgba(234,205,163,1) 23%);
-    font-weight: 600;
-    height: 60px;
-    width: 180px;
-    border: none;
-    border-radius: 10px;
-    color: white;
+.nav ul li a{
+    text-decoration: none;
     font-size: large;
+    text-transform: uppercase;
 }
-p{
-    color: #9e6920;
-    font-weight: 1000;
-    font-style: italic;
-}
-h2{
-    font-size: xx-large;
-    color: white;
-}
-.nav2{
-    background-color:rgba(163, 142, 96, 0.703);
-    margin-left: 55px;
-    height: 35px;
-    width: 90%;
-    border-radius: 20px;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-.Overview{
-    margin-top: 10px;
-    height: 800px;
+.hero{
+    background-image: url(spacejoy-9M66C_w_ToM-unsplash.jpg);
     width: auto;
-    position: relative;
-    text-align: center;
-}
-.card1{
-    height: 230px;
-    width: 500px;
-    position: absolute;
-    top: 20%;
-    left: 10%;
-}
-.card2{
-    height: 230px;
-    width: 500px;
-    position: absolute;
-    top: 20%;
-    right: 10%;
-}
-.card3{
-    height: 230px;
-    width: 500px;
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-}
-.card4{
-    height: 230px;
-    width: 500px;
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-}
-.service{
-    border: 2px,solid,rgb(255, 153, 0);
-    width: auto;
-    height: 400px;
+    height: 760px;
+    background-size: cover ;
+    background-position: center;
+    
 }
