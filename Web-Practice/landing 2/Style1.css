@@ -1,0 +1,102 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    background-image:url(3392075.jpg);
+    width: auto;
+    height: 95vh;
+    background-size: cover;
+}
+.nav{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    display: inline;
+    margin: 0px 20px;
+    font-size: 20px;
+    position: relative;
+}
+button{
+    border: 1px solid orange;
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    background: transparent;
+    margin-left: 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.heromain{
+    width: auto;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero{
+    background-image:url(2156664-removebg-preview.png);
+    background-size: cover;
+    width: 600px;
+    height: 500px;
+}
+.herotext{
+    width: 700px;
+    height: 400px;
+}
+.herotext h1{
+    font-size: 55px;
+}
+.herotext p{
+    font-size:25px ;
+}
+.herotext div{
+    margin-left: 70px;
+}
+.icon{
+    width: auto;
+    margin: 0px 100px;
+}
+.fa-brands{
+    color: rgb(43, 45, 48);
+    background-color: rgb(250, 176, 97);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 20px;
+    display: inline;
+}
+.nav ul li::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s;
+}
+.nav ul li:hover:after{
+    width: 100%;
+}
+button::before{
+    content: "";
+    width: 0;
+    height: 35px;
+    background-color: orange;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover:before{
+    width: 100%;
+}
