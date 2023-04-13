@@ -11,14 +11,26 @@ article{
     align-items:center ;
 }
 .child{
-    background-color: rgba(58, 57, 57, 0.541);
+    background-color: rgb(0, 0, 0);
     border-radius: 15px;
     width: 100%;
     scale: 95%;
     transition: 0.5s;
+    animation-name: load;
+    animation-duration: 2s;
+}
+@keyframes load {
+    0%{
+        scale:50%
+    }
+
+    100%{
+        scale: 95px;%
+    }
 }
 .child:hover{
     scale: 100%;
+    background-color: rgba(58, 57, 57, 0.541);
 }
 .child:nth-child(1){
     grid-area: 1/1/1/4;
