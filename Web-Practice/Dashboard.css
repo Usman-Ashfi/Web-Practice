@@ -1,0 +1,84 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+body{
+    background-image: url(milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
+    background: cover;
+    background-size: cover;
+    padding: 0%;
+    margin: 40px;
+    color: aliceblue;
+    /* background: rgb(77, 33, 85); */
+    /* background: linear-gradient(221deg, rgba(218,0,255,1) 0%, rgba(58,34,61,1) 100%); */
+}
+.main{
+    position: relative;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.4px);
+    -webkit-backdrop-filter: blur(17.4px);
+}
+.sidebar{
+    float: left;
+    width: 250px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.sidebar header{
+    font-size: 34px;
+    line-height:70px;
+    text-align: center;
+    height: 25%;
+}
+.sidebar header i{
+    margin-right: 16px;
+}
+ul{
+    margin: 0%;
+    padding-left: 50px;
+}
+ul a{
+    display: block;
+    line-height:75px;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    /* background-color: aqua; */
+}
+ul a i{
+    margin-right: 16px;
+}
+.nav{
+
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+input{
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 38px;
+    width: 500px;
+    margin: 20px;
+    font-size: 28px;
+}
+.proimg{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.profilelogo{
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
