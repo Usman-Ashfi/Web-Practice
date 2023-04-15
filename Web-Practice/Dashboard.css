@@ -10,8 +10,6 @@ body{
     padding: 0%;
     margin: 40px;
     color: aliceblue;
-    /* background: rgb(77, 33, 85); */
-    /* background: linear-gradient(221deg, rgba(218,0,255,1) 0%, rgba(58,34,61,1) 100%); */
 }
 .main{
     position: relative;
@@ -83,17 +81,20 @@ input{
     height: 70px;
     border-radius: 100px;
 }
-@media (max-width: 780px){
+@media (max-width: 1070px){
+    body{
+        background-image: url(milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
+        background: cover;
+        background-size: cover;
+        padding: 0%;
+        margin: 0%;
+    }
     .main{
         position: relative;
         height: auto;
     }
-    .sidebar{
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
+    aside{
+        display: none;
     }
     .sidebar header{
         display: none;
