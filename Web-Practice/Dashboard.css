@@ -43,14 +43,15 @@ ul{
     padding-left: 50px;
 }
 ul a{
-    display: block;
+    display: inline;
     line-height:75px;
     height: 100%;
     width: 100%;
     font-size: 24px;
     /* background-color: aqua; */
 }
-ul a i{
+ul i{
+    display: inline;
     margin-right: 16px;
 }
 .nav{
@@ -82,3 +83,58 @@ input{
     height: 70px;
     border-radius: 100px;
 }
+@media (max-width: 780px){
+    .main{
+        position: relative;
+        height: auto;
+    }
+    .sidebar{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+    }
+    .sidebar header{
+        display: none;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    ul a{
+        display: none;
+
+    }
+    ul i{
+        padding-left: 10px;
+       height: 50px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+    }
+    .search i{
+        font-size: 24px;
+    }
+    input{
+        height: 18px;
+        width: 180px;
+        font-size: 14px;
+    }
+    .profilelogo{
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+    }
+    
+}
+
