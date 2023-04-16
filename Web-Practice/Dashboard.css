@@ -128,6 +128,7 @@ article{
     }
     .banner{
         flex-direction: column;
+    
     }
     .bannertext h2{
         text-align: center;

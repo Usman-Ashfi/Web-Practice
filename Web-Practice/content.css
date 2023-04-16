@@ -24,10 +24,10 @@ article{
     justify-content:center;
     text-align: center;
     gap: 10px;
-    
+    scale: 95%;
+    transition: .5s;
   }
 .child:hover{
-    transition: ease-in-out 1s;
     scale: 100%;
     background-color: rgba(0, 0, 0, 0.913);
 }
@@ -71,14 +71,6 @@ p {
 .p2{
     background-image: url(landing2.png);
     opacity: .5;
-}
-.text1 div{
-    height: 80px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
-    border-radius: 5px;
 }
 @media (max-width: 780px){
     .grid{
