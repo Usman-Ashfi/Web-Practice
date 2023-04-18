@@ -72,6 +72,16 @@ p {
     background-image: url(landing2.png);
     opacity: .5;
 }
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+iframe::-webkit-scrollbar{
+    display: none;
+}
+
 @media (max-width: 780px){
     .grid{
         margin: 0px;
