@@ -17,6 +17,9 @@ nav{
     align-items: center;
     background-color: transparent;
 }
+h1{
+    color: white;
+}
 .btncolor{
     color: white;
     font-size: 20px;
@@ -178,9 +181,6 @@ i{
     font-size: 50px;
     transition: 0.5s ease-in;
     animation: pulse 3s infinite linear;
-}
-i:hover{
-    rotate: 360deg;
 }
 @keyframes pulse {
     0%{
