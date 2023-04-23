@@ -19,6 +19,7 @@ nav{
 }
 h1{
     color: white;
+    cursor: pointer;
 }
 .btncolor{
     color: white;
@@ -27,7 +28,6 @@ h1{
     width: 100px;
     height: 35px;
     background: transparent;
-    margin-left: 40px;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -58,80 +58,94 @@ button:hover::after{
 }
 .child{
     background: linear-gradient(49deg, rgba(48,41,109,1) 0%, rgba(85,176,220,1) 100%);
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 100%;
     height: 100%;
 }
+.maincontentblock{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.productcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+.centercontent{
+    position: relative;
+    --card-padding:3rem;
+    width: min-content;
+    width: 20rem;
+    height:20rem;
+}
 .textback{
     position: absolute;
-    inset: 50% 50%;
-    font-size: 109px;
+    font-size: 5.69rem;
+    top:35%;
+    left: -27%;
     color: white;
     font-weight: bold;
-    transform: translate(-270px,-100px);
-    letter-spacing: 20px;
+    letter-spacing: 10px;
 }
 .shoepic{
     position: absolute;
-    inset: 50% 50%;
-    transform: translate(-165px,-220px);
-    width: 500px;
-    height: 400px;
     animation: Up-Down 5s  infinite ;
     animation-timing-function: linear;
 }
 img{
-    width: 100%;
-    height:100%;
+    width: 24rem;
+    height:22rem;
 }
 .textfront{
     position: absolute;
-    inset: 50% 50%;
-    font-size: 109px;
-    color: transparent;
+    top:35%;
+    left: -27%;
+    font-size: 5.69rem;
+    color: white;
     font-weight: bold;
-    transform: translate(-270px,-100px);
-    letter-spacing: 20px;
+    letter-spacing: 10px;
+    z-index: 1;
 }
-.textfront > span{
+.textfront {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 @keyframes Up-Down {
     0% {
-        transform:  translate(-165px,-220px);
+        transform:  translate(0px,10px);
     }
     24% {
-        transform:  translate(-165px,-230px) ;
+        transform:  translate(0px,20px) ;
     }
     50% {
-        transform:  translate(-165px,-220px)  ;
+        transform:  translate(0px,10px)  ;
     }
     74% {
-        transform:  translate(-165px,-210px)  ;
+        transform:  translate(0px,0px)  ;
     }
     100% {
-        transform:  translate(-165px,-220px)  ;
+        transform:  translate(0px,10px)  ;
     }
 }
 .productcost{
-    width: 400px;
-    position: absolute;
-    inset: 50% 50%;
-    transform: translate(-270px,250px);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0px 10px;
 }
 .productcost > div{
     display: flex;
-    align-self: flex-end;
 }
 .rate{
     display: flex;
     flex-direction: column;
-    width: 300px;
 }
 .price{
     color: white;
@@ -144,17 +158,24 @@ img{
 .discription{
     padding: 0%;
     display: flex;
-    width: 300px;
+    width: auto;
+    padding-right: 20px;
 }
 .discription > p {
     color: rgba(255, 255, 255, 0.703);
     font-size: 18px;
     margin: 0px;
 }
-.productcost > div > button{
-    font-size: 24px;
+.buy{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.buy button{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
     color: white;
-    width: 150px;
+    font-weight: bolder;
 } 
 .left {
     position: absolute;
@@ -165,6 +186,7 @@ img{
     background: transparent;
     border: none;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 .right {
     position: absolute;
@@ -175,6 +197,7 @@ img{
     border: none;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 i{
     color: white;
@@ -192,5 +215,36 @@ i{
     100%{
         scale: 1;
     }
-    
+}
+@media (max-width: 780px) {
+    nav{
+        padding: 0px 15px;
+    }
+    .btnsignup{
+        display: none;
+    }
+    .btncolor{
+        font-size: 15px;
+    }
+    .textback{ 
+        letter-spacing: 8px;
+        scale: 0.7;
+    }
+    .shoepic{
+        scale: 0.7;
+    }
+    .textfront{
+        letter-spacing: 8px;
+        scale: 0.7;
+    }
+    .discription > p {
+        font-size: 14px;
+    }
+    .left {
+        display: none;
+    }
+    .right {
+        display: none;
+    }
+
 }
