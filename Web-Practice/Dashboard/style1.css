@@ -41,9 +41,16 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.iconlinks > i{
+.iconlinks > a{
     margin: 18px;
     font-size: 20px;
+}
+.iconlinks > a > i{
+    transition: 0.25s;
+}
+.iconlinks > a > i:hover{
+    color: rgb(0, 179, 255);
+    transform: translate(0px,-5px);
 }
 hr{
     font-size: 85px;
@@ -63,13 +70,17 @@ hr{
     text-decoration: none;
     margin: 0px;
     padding: 0px;
+    transition: 0.25s;
+}
+.email > span > a:hover{
+    color: rgb(0, 179, 255);
+    transform: translate(0px,-5px);
 }
 .email > div {
     align-self: center;
     margin-top: 30px;
     padding: 0;
 }
-
 .topnav{
     width: 100%;
     padding:0px 20px;
@@ -78,7 +89,6 @@ hr{
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    /* position: fixed; */
 }
 .logo{
     width: 100px;
@@ -104,6 +114,10 @@ img{
 .uldiv > ul > li > a{
     text-decoration: none;
     color: white;
+    transition: 0.25s;
+}
+.uldiv > ul > li > a:hover{
+    color: rgb(0, 179, 255);
 }
 .maincontent{
     box-sizing: border-box;
@@ -116,7 +130,6 @@ img{
     height: 100vh;
 }
 .hero{
-    
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -137,6 +150,9 @@ img{
     margin-bottom: 20px;
     line-height: 1.5rem;
     letter-spacing: 1px;
+}
+.hero > p > a{
+    color: rgb(0, 179, 255);
 }
 html {
     scroll-behavior: smooth;
