@@ -1,5 +1,5 @@
 #About_Me{
-    height: 100vh;
+    margin-bottom:200px ;
 }
 .aboutme{
     display: flex;
@@ -8,7 +8,6 @@
 h2{
     position: relative;
     font-size: 2rem;
-    display: inline;
 }
 h2::after{
     content: "";
@@ -21,6 +20,8 @@ h2::after{
     background-color: white;
 }
 .myself{
+    display: flex;
+    flex-direction: column;
     width: 65%;
     text-align: justify;
     padding: 0px 20px 0px 0px;
@@ -30,7 +31,7 @@ h2::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 35%;
     height: auto;
     position: relative;
 }
@@ -38,7 +39,7 @@ h2::after{
     height: 300px;
     width: 300px;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     transition: 0.5s;
     z-index: 1;
 }
@@ -69,5 +70,21 @@ h2::after{
 .skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
-    gap: 10px 10px;
+    gap: 20px 10px;
+}
+@media (max-width: 780px){
+    .aboutme{
+        flex-direction: column;
+    }
+    .myself{
+        width: 100%;
+    }
+    .mypic{
+        width: 100%;
+        margin: 80px 0px;
+    }
+    .skills-list {
+        justify-content: center;
+    }
+
 }

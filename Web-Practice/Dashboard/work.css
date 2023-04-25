@@ -6,12 +6,13 @@
 
 }
 .item{
-    display: flex;
-    margin: 100px 0px;
+    display: grid;
+    margin:30px;
+    grid-template-columns: repeat(12,1fr);
 }
 .workpic{
-    width: 60%;
     height: 25rem;
+    grid-area: 1/1/-1/8;
 }
 .new{
     background-position: center;
@@ -36,9 +37,9 @@ iframe:hover{
     scale: 105%;
 }
 .workinfo{
-    position: relative;
-    width: 40%;
     text-align: right;
+    grid-area: 1/6/-1/13;
+    z-index: 1;
 }
 #head{
     display: inline-block;
@@ -61,41 +62,24 @@ iframe:hover{
 .it:hover:after{
     width: 100%;
 }
-.it2::after{
-    content: "";
-    width: 10%;
-    height: 3px;
-    background: rgb(0, 179, 255);
-    position: absolute;
-    bottom: -10px;
-    left: 0%;
-    transition: 0.5s;
-}
-.it2:hover:after{
-    width: 100%;
-}
+
 #Featured{
     color: rgb(0, 179, 255);
 }
 .project-description {
-    position:absolute;
-    right: 0;
-    width: 30rem;
     padding: 15px;
     border-radius: 10px;
     background-color: rgba(17, 130, 222, 0.959);
 }
-.workinfo2{
-    position: relative;
-    width: 40%;
-    text-align: left;
-}
-.project-description2 {
-    position:absolute;
-    left: 0;
-    width: 30rem;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: rgba(17, 130, 222, 0.959);
-    z-index: 1;
+@media (max-width: 780px){
+    .worklist{
+        padding:0px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px 10px;
+        margin:20px 0px;
+    }
 }
