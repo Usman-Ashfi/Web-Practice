@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="artical">
+            <h1>𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒢𝓇𝒶𝒹𝒾𝓃𝑔 𝒮𝓎𝓈𝓉𝑒𝓂</h1>
+            <p class="text">Please Enter your Number to find your grade </p>
+            <div class="inputdata">
+                <input id="grade" type="number" required>
+                <p id="output"></p>
+                <button type="button" onclick="getInputValue()">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        }
+        .artical{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 15px;
+            height: 60%;
+            width: 50%;
+            background: rgba(29, 26, 26, 0.44);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(11px);
+        }
+        h1{
+            text-align: center;
+            color: aliceblue;
+        }
+        .text{
+            color: beige;
+            text-align: center;
+
+        }
+        .inputdata{
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        input{
+            height: 30px;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid rgb(12, 153, 184);
+            outline: 0;
+            color: #ffffffc4;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        button{
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+        background: transparent;
+        border: none;
+        position: relative;
+        color: #f0f0f0;
+        cursor: pointer;
+        z-index: 1;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        button::after,
+        button::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -99999;
+        transition: all .4s;
+        }
+
+        button::before {
+        transform: translate(0%, 0%);
+        width: 100%;
+        height: 100%;
+        background: #0ba5b3c4;
+        border-radius: 10px;
+        }
+
+        button::after {
+        transform: translate(10px, 10px);
+        width: 35px;
+        height: 35px;
+        background: #ffffff15;
+        backdrop-filter: blur(5px);
+        border-radius: 50px;
+        }
+
+        button:hover::before {
+        transform: translate(5%, 20%);
+        width: 110%;
+        height: 110%;
+        }
+
+        button:hover::after {
+        border-radius: 10px;
+        transform: translate(0, 0);
+        width: 100%;
+        height: 100%;
+        }
+        #output{
+            color: azure;
+        }
+
+    </style>
+
+
+    <script>
+        function getInputValue() {
+        var num = document.getElementById("grade").value;
+       if(num>100 & num > null){
+        document.getElementById("output").innerHTML ="Your Input is invalid 🚫"
+       }else if(num>=90){
+        document.getElementById("output").innerHTML ="Your Grade is A+ applause 😎"
+       }else if(num >=85){
+          document.getElementById("output").innerHTML ="You Grade is A amazing 🤝"
+      }else if(num >= 80){
+          document.getElementById("output").innerHTML ="You Grade is A- 👻"
+      }else if(num >= 75){
+          document.getElementById("output").innerHTML ="You Grade is B+ i told you sooo 🤙"
+      }else if(num >= 70){
+          document.getElementById("output").innerHTML ="You Grade is B i knew it you could do it 👏"
+      }else if(num >= 65){
+          document.getElementById("output").innerHTML ="You Grade is C+ hmm good potential 😲"
+      }else if(num >= 60){
+          document.getElementById("output").innerHTML ="You Grade is C good good 👌"
+      }else if(num >= 55){
+          document.getElementById("output").innerHTML ="You Grade is D+ doing good 😉"
+      }else if(num >= 50){
+          document.getElementById("output").innerHTML ="You Grade is D you can do it 😤"
+      }else if(num >= 40){
+          document.getElementById("output").innerHTML ="You Grade is E try a bit hard 🤌"
+      }else if(num >= 0){
+          document.getElementById("output").innerHTML ="You Grade is F better luck next time 🤛"
+      }
+    }
+    </script>
+
+
+</body>
+</html>
