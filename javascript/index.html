@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Result of Students </h1>
+
+    <style>
+      body{
+        background-color: #474747;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      thead >tr{
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(4, 42, 61);
+      }
+      table, th, td {
+        border: 2px solid rgb(17, 42, 54);
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+
+        }
+    </style>
+
+
+    <script>
+
+        function tmark(math,English,Urdu,Geography){
+            var tsum= math + English + Urdu + Geography
+            sum = tsum
+            data.forEach((element) => {
+              element.sum = tsum;
+            });
+            return tsum
+          }
+          
+        function per(sum){
+            var p= ((sum)/400)*100
+            var percentage = p
+            data.forEach((element) => {
+              element.percentage = p;
+            });
+            return p +"%"
+        }
+        function grade(percentage) {
+        if (percentage > 100) {
+          return "Invalid Number";
+        } else if (percentage >= 86 && percentage <= 100) {
+          return "A";
+        } else if (percentage >= 66 && percentage <= 85) {
+          return "B";
+        } else if (percentage >= 51 && percentage <= 65) {
+          return "C";
+        } else if (percentage >= 33 && percentage <= 50) {
+          return "D";
+        } else {
+          return "f";
+        }
+      }
+
+        var data=[
+            {name:"Ali",math:50,English:76,Urdu:89,Geography:54},
+            {name:"Ahsan",math:80,English:66,Urdu:99,Geography:55},
+            {name:"Zaki",math:66,English:73,Urdu:19,Geography:75},
+            {name:"Aysha",math:54,English:56,Urdu:43,Geography:60},
+            {name:"zalim",math:99,English:99,Urdu:99,Geography:99},
+        ];
+        console.log(data);
+        
+       
+        document.write(`
+        
+                <table border>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Math</th>
+                    <th>English</th>
+                    <th>Urdu</th>
+                    <th>Geography</th>
+                    <th>Total Marks</th>
+                    <th>per%</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+        `)
+        for(var i=0 ; i < data.length; i++)
+        document.write(`
+                <tr>    
+                    <td>${data[i].name}</td>
+                    <td>${data[i].math}</td>
+                    <td>${data[i].English}</td>
+                    <td>${data[i].Urdu}</td>
+                    <td>${data[i].Geography}</td>
+                    <td>${tmark(data[i].math,data[i].English,data[i].Urdu,data[i].Geography)}</td>
+                    <td>${per(data[i].sum)}</td>
+                    <td>${grade(data[i].percentage)}</td>
+                </tr>
+             `)
+
+        document.write(`
+        
+                </tbody>
+            </table>
+        
+        
+        `)
+        
+
+    </script>
+    
+
+
+</body>
+</html>
